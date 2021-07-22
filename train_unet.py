@@ -28,7 +28,7 @@ if __name__=='__main__':
     optional.add_argument('-vt1w', '--validate_t1w', type=str, help='Validation T1w Directory')
     optional.add_argument('-vmsk', '--validate_msk', type=str, help='Validation Mask Directory')
     optional.add_argument('-init', '--init_model', type=str, help='Init Model')
-    optional.add_argument('-class', '--num_class', type=int, default=7, help='Number of Class for Model Input')
+    optional.add_argument('-class', '--num_class', type=int, default=7, help='Number of Tissue Class for Model Input')
     optional.add_argument('-slice', '--input_slice', type=int, default=3, help='Number of Slice for Model Input')
     optional.add_argument('-conv', '--conv_block', type=int, default=5, help='Number of UNet Block')
     optional.add_argument('-rescale', '--rescale_dim', type=int, default=256, help='Rescale Dimension')
