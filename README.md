@@ -1,4 +1,4 @@
-# NHP-Segmentation
+# NHP-Segmentation (DeepSeg)
 
 This repository includes U-Net tissue segmentation code for non-human primate structure MRI data. 
 
