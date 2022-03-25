@@ -4,12 +4,14 @@ This repository includes U-Net tissue segmentation code for non-human primate st
 
 ### Docker Image
 1. Pull
+
 The docker image has been uploaded onto DockerHub, download it by using the following command
 ```
 docker pull xinhui1017/deepseg:latest
 ```
 
 2. Run
+
 Perform segmentation
 ```
 docker run -v <NHP-Segmentation local dir>:/wd xinhui1017/deepseg:latest segment.py -in /wd/data/sub-032215_ses-001_run-1_T1w.nii.gz -model /wd/unet_model/nhp-model-04-epoch
@@ -17,12 +19,14 @@ docker run -v <NHP-Segmentation local dir>:/wd xinhui1017/deepseg:latest segment
 U-Net result will be saved in `/wd/data/sub-032215_ses-001_run-1_T1w_pre_mask.nii.gz`
 
 3. Helper
+
 Check the helper page for more usage
 ```
 docker run xinhui1017/deepseg:latest
 ```
 
 4. Storage Requirement
+
 ~4GB hard disk space for whole docker image
 
 ### Set Up Environment
