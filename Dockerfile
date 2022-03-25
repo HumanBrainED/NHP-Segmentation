@@ -15,4 +15,4 @@ ENV DIMGNAME="xinhui1017/deepseg" \
     PATH="/unet_model:/unet_model/models/:$PATH"
 
 WORKDIR /unet_model/models
-CMD docker_Help.py
+CMD python3 /unet_model/docker_Help.py
