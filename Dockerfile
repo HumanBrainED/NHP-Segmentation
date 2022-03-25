@@ -7,7 +7,7 @@ RUN pip install scipy nibabel
 
 # Copy UNet Codes and Models into Image
 COPY *.py /unet_model/
-COPY models/*.model /unet_model/models/
+COPY unet_model/* /unet_model/models/
 
 # Add UNet Path into ENV
 ENV DIMGNAME="xinhui1017/deepseg" \
