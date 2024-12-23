@@ -97,20 +97,31 @@ The U-Net segmentation mask outputs will be stored in `<U-Net mask output path>`
 
 ### Developer Notes
 
-#### Code
-
 - dataset.py is used to change 3D MRI volume data to 2D slices as the input to U-Net model.
 
 - model.py is used to define U-Net model architecture.
 
 - function.py is used to define helper functions, such as mask prediction, FP/FN estimation, and dice coefficient calculation etc.
 
-#### CMI Server Data
-
-- [Document](https://docs.google.com/document/d/1_LHjuYDsaXAJn5XrTBV70_s7d9sL3r7eQZobXxzcIlo/edit?usp=sharing)
-
 ### References
 
-[1] [Wang et al., U-net model for brain extraction: Trained on humans for transfer to non-human primates, 2021, NeuroImage](https://www.sciencedirect.com/science/article/pii/S1053811921002780)
+```
+@inproceedings{li2024deepseg,
+  title={DeepSeg: A transfer-learning segmentation tool for limited sample training of nonhuman primate MRI},
+  author={Li, Xinhui and Wang, Xindi and Mantell, Kathleen and Casillo, Estefania Cruz and Milham, Michael and Opitz, Alexander and Xu, Ting},
+  booktitle={2024 46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+  pages={1--4},
+  year={2024},
+  organization={IEEE}
+}
 
-[2] [Li et al., Toward Automatic Segmentation for Non-human Primates, 2021, NIBS Workshop](https://nibs-workshop.umn.edu/sites/nibs-workshop.umn.edu/files/2021-06/Xinhui_Li.pdf)
+@article{wang2021,
+  title={U-net model for brain extraction: Trained on humans for transfer to non-human primates},
+  author={Wang, Xindi and Li, Xin-Hui and Cho, Jae Wook and Russ, Brian E and Rajamani, Nanditha and Omelchenko, Alisa and Ai, Lei and Korchmaros, Annachiara and Sawiak, Stephen and Benn, R Austin and others},
+  journal={Neuroimage},
+  volume={235},
+  pages={118001},
+  year={2021},
+  publisher={Elsevier}
+}
+```
